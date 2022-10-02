@@ -1,1 +1,1 @@
-Integrante: Gonzalo Dooso Soto
+Integrante: Gonzalo Donoso Soto
