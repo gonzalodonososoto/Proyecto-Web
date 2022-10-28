@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSesionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AuthService, private router:Router) { }
+
+  iniciar={
+    correo:'',
+    contrasenia:''
+  }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    this.auth.loginUsuario(this.iniciar).subscribe(
+      (res)=>{
+        console.log(res)
+      },
+      (err) => console.log(err)
+    );
   }
 
 }

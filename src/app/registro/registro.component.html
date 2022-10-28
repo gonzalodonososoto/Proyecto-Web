@@ -1,0 +1,31 @@
+<div class="form">
+  <mat-card-title>Registrar usuario</mat-card-title>
+  <mat-card-content>
+    <div class="container">
+      <mat-form-field>
+        <input [(ngModel)]="registrarUsuario.nombre" matInput placeholder="Nombre" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [(ngModel)]="registrarUsuario.edad" matInput placeholder="Edad" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [(ngModel)]="registrarUsuario.genero" matInput placeholder="Genero" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [(ngModel)]="registrarUsuario.correo" matInput placeholder="Correo" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [(ngModel)]="registrarUsuario.contrasenia" matInput placeholder="Contraseña" required>
+      </mat-form-field>
+
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+      <button (click)="registrar()" class="button col" >Registrar</button>
+  </mat-card-actions>
+</div>

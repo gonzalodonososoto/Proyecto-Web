@@ -10,7 +10,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
-    
+
 
     <style>
       .bd-placeholder-img {
@@ -65,21 +65,21 @@
       }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
   </head>
   <body class="text-center">
-    
+
 <main class="form-signin w-100 m-auto">
   <form>
     <h1 class="h3 mb-3 fw-normal">Inicio Sesion</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="correo@ejemplo.com">
+      <input type="email" class="form-control" id="floatingInput" placeholder="correo@ejemplo.com" [(ngModel)]="iniciar.correo" >
       <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" [(ngModel)]="iniciar.contrasenia">
       <label for="floatingPassword">Contraseña</label>
     </div>
 
@@ -88,11 +88,11 @@
         <input type="checkbox" value="remember-me"> Recordar datos de usuario
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar Sesion</button>
+      <button (click)="login()" class="button col" >Iniciar Sesion</button>
   </form>
 </main>
 
 
-    
+
   </body>
 </html>
