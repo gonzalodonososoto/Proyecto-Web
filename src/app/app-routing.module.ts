@@ -8,7 +8,7 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { PreguntasfrecuentesComponent } from './preguntasfrecuentes/preguntasfrecuentes.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { RegistroComponent } from './registro/registro.component';
-import { SucursalesComponent } from './sucursales/sucursales.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'contactosemergencia', component:ContactoemergenciaComponent},
   { path: 'informate', component:InformateComponent},
   {path: 'preguntasfrecuentes', component:PreguntasfrecuentesComponent },
-  { path: 'sucursales', component:SucursalesComponent},
   { path: 'registro', component:RegistroComponent},
 
 ];

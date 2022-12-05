@@ -9,7 +9,6 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ForoComponent } from './foro/foro.component';
 import { InformateComponent } from './informate/informate.component';
 import { ContactoemergenciaComponent } from './contactoemergencia/contactoemergencia.component';
-import { SucursalesComponent } from './sucursales/sucursales.component';
 import { PreguntasfrecuentesComponent } from './preguntasfrecuentes/preguntasfrecuentes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegistroComponent } from './registro/registro.component';
@@ -29,7 +28,6 @@ import { AuthService } from './service/auth.service';
     ForoComponent,
     InformateComponent,
     ContactoemergenciaComponent,
-    SucursalesComponent,
     PreguntasfrecuentesComponent,
     NavbarComponent,
     RegistroComponent
